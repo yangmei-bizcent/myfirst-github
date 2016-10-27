@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>品类销售</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/ClassSaleReport.css" />
+    <link rel="stylesheet" type="text/css" href="plugins/layerMobile/skin/layer.css" />
+    <link rel="stylesheet" type="text/css" href="scripts/pluginDate/pluginDate.css">
+    <script src="scripts/font_media.js"></script>
+    <style>
+        *{
+            font-family: 黑体;
+        }
+    </style>
+</head>
+<body>
+    <!--<header>-->
+        <!--<div class="return">-->
+            <!--<a class="header_back"><img src="img/jt@3x.png" alt="返回"></a>-->
+        <!--</div><span id="title" style="width: 150px;height: 0.5rem;display: inline-block;">销售日报</span>-->
+        <!--<div class="header_tail">-->
+        <!--</div>-->
+    <!--</header>-->
+    <div class="myDate"></div>
+    <div style="padding:0 0.15rem;margin-top:50px;">
+        <div class="rows bgColor" style="padding-top: 0.15rem;">
+            <div class="titleBox imgChooseText" ></div>
+            <div class="dataTitle" style="display:inline-block;width:65%;">
+                <div class="bigMoney">￥<span class="salesValue"></span><span class="smallMoney">千元(含税)</span></div>
+            </div>
+            <div class="dataTitle2">
+                <span class="smallMoney">同比&nbsp;</span>
+                <span class="smallMoney onyearonyearbasis"></span>
+                <span class="smallMoney pa_l10">环比&nbsp;</span>
+                <span class="smallMoney samestore"></span>
+            </div>
+        </div>
+        <div class="rows bgColor">
+            <div id="barDataUndertitle" class="f_l barDataUndertitle">
+                <div class="dataUnderTitle f_l">
+                    <div class="smallMoney ">客单价</div>
+                    <div ><span class="unitprice"></span>元</div>
+                </div>
+                <div class="dataUnderTitle f_l">
+                    <div class="smallMoney ">客流量</div>
+                    <div ><span class="passengeflow"></span>千笔</div>
+                </div>
+                <div class="dataUnderTitle f_l">
+                    <div class="smallMoney ">毛利率</div>
+                    <div class="grossprofitrate"></div>
+                </div>
+            </div>
+        </div>
+        <div class="rows rowAttr bgColor">
+            <table id="tableUnderPie1" class="table">
+                <thead>
+                    <tr class="tableTitle">
+                        <th>二级品类</th>
+                        <th>净额(千)</th>
+                        <th>毛利率</th>
+                        <th>客流(千)</th>
+                        <th>渗透率</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <div class="ClassSelDrop">
+        <div class="titleClass" name="" num=""></div>
+        <div class="titleClass" name="" num=""></div>
+        <div class="titleClass" name="" num=""></div>
+        <div class="titleClass" name="" num=""></div>
+        <div class="titleClass" name="" num=""></div>
+        <div class="titleClass" name="" num=""></div>
+    </div>
+    <div class="ClassSelDropAll"></div>
+    <div class="bind-relieve">
+        <img src="img/loading.gif" class="bind-tip">
+    </div>
+    <!-- 引入 jQuery -->
+    <script src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/pluginDate/pluginDate.js"></script>
+    <script src="plugins/layerMobile/layer.js"></script>
+    <script src="scripts/ClassDailySaleReport.js"></script>
+</body>
+</html>
