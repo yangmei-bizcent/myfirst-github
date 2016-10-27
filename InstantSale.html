@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="app-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <title>即时销售</title> 
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/instantsale.css" />
+    <link rel="stylesheet" type="text/css" href="scripts/pluginDate/pluginDate.css">
+    <link rel="stylesheet" type="text/css" href="scripts/pluginDate/swiper-3.3.1.min.css">
+    <script src="scripts/font_media.js"></script>
+</head>
+
+<body style="height: inherit;">
+    <div id="page_bgdrop"></div>
+    <!-- <header>
+        <div class="return">
+            <a class="header_back"><img src="img/jt@3x.png" alt="返回"></a>
+        </div><a href="SwitchReportForm.html">即时销售</a>
+        <div class="header_tail">
+        </div>
+    </header> -->
+    <div id="myDate">
+        <!-- <span id="nowdate"></span> -->
+    </div>
+    <div id="container">
+        <section>
+            <div class="expr_title ins_salem">即时销售额</div>
+            <div class="row expr_con">
+                <div class="col-sm-6 col-xs-6">
+                    <div class="expr_val" id="allsalemoney"></div>
+                    <div class="expr_valsm">总销售额(含税)</div>
+                </div>
+                <div class="col-sm-6 col-xs-6">
+                    <div class="expr_val" id="cashzb"></div>
+                    <div class="expr_valsm">现金流占比</div>
+                </div>
+            </div>
+            <div class="expr_title">客单客流分析</div>
+            <div class="row expr_con">
+                <div class="col-sm-6 col-xs-6">
+                    <div class="expr_val" id="saleprice"></div>
+                    <div class="expr_valsm">客单价</div>
+                </div>
+                <div class="col-sm-6 col-xs-6">
+                    <div class="expr_val" id="salecount"></div>
+                    <div class="expr_valsm">客流量</div>
+                </div>
+            </div>
+
+            <div style="height:1.7rem;margin-top: 0.4rem;">
+                <div id="wp_chart" style="width: 100%;height:1.7rem;"></div>
+            </div>
+        </section>
+        <div>
+            <div class="wpsales_title mrg_5">时段销售</div>
+            <div style="padding:.1rem .15rem;">
+                <table id="tb_wholepointsales" class="table-responsive table table-hover tb_wholepointsales" border="0">
+                    <thead>
+                      <tr>
+                        <th data-field="wpoint">时点</th>
+                        <th data-filed="sales">销售额<span class="unit_tb">(千元)</span></th>
+                        <th data-field="keliu">客流量<span class="unit_tb">(笔)</span></th>
+                        <th data-field="keprice">客单价<span class="unit_tb">(元)</span></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                    </tbody>
+                  </table>
+            </div>
+            
+              <!-- <div id="tb_wholepointsales" class="tb_wholepointsales">
+                <div class="thead">
+                    <div class="th" style="width:15%;">时点</div>
+                    <div class="th" style="width:33%;">销售额<span class="unit_tb">(千元)</span></div>
+                    <div class="th" style="width:32%;">客流量<span class="unit_tb">(笔)</span></div>
+                    <div class="th" style="width:20%;">客单价<span class="unit_tb">(元)</span></div>
+                </div>
+                <div id="blank_top"></div>
+                <div class="tbody">
+                    <div class="tr">
+                        <div class="td" style="width:15%;">11</div>
+                        <div class="td" style="width:33%;">11</div>
+                        <div class="td" style="width:32%;">11</div>
+                        <div class="td" style="width:20%;">11</div>
+                    </div>
+                </div>
+              </div> -->
+        </div>
+        <div>
+            <div class="busisales_title">业态销售</div>
+            <div id="bs_chart" style="width: 100%;height:1.7rem;"></div>
+            <div id="container_depttable">
+                
+            </div>
+            <section class="toClassifySale();">
+                
+            </section>
+        </div>
+    </div>
+    <div class="bind-relieve">
+        <img src="img/loading.gif" class="bind-tip">
+    </div>
+</body>
+<script src="scripts/jquery.min.js" type="text/javascript"></script>
+<script src="plugins/echarts/echarts.min.js"></script>
+<script type="text/javascript" src="scripts/pluginDate/pluginDate.js"></script>
+<script type="text/javascript" src="scripts/pluginDate/swiper-3.3.1.jquery.min.js"></script>
+<!-- <script type="text/javascript" src="scripts/page_scroll.js"></script> -->
+<script src="scripts/InstantSale.js" type="text/javascript"></script>
+</html>
